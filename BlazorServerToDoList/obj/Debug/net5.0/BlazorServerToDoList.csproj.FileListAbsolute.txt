@@ -55,3 +55,5 @@
 /Users/guccigod/Documents/CodingProjects/Blazor/ToDoList/BlazorServerToDoList/BlazorServerToDoList/obj/Debug/net5.0/BlazorServerToDoList.pdb
 /Users/guccigod/Documents/CodingProjects/Blazor/ToDoList/BlazorServerToDoList/BlazorServerToDoList/obj/Debug/net5.0/BlazorServerToDoList.genruntimeconfig.cache
 /Users/guccigod/Documents/CodingProjects/Blazor/ToDoList/BlazorServerToDoList/BlazorServerToDoList/obj/Debug/net5.0/BlazorServerToDoList.csproj.CopyComplete
+/Users/guccigod/Documents/CodingProjects/Blazor/ToDoList/BlazorServerToDoList/BlazorServerToDoList/obj/Debug/net5.0/RazorDeclaration/Pages/Components/ToDo.razor.g.cs
+/Users/guccigod/Documents/CodingProjects/Blazor/ToDoList/BlazorServerToDoList/BlazorServerToDoList/obj/Debug/net5.0/Razor/Pages/Components/ToDo.razor.g.cs

@@ -4,4 +4,12 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Pages\Components\" />
+    <None Remove="Data\Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\Components\" />
+    <Folder Include="Data\Models\" />
+  </ItemGroup>
 </Project>

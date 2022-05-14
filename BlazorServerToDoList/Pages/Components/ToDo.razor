@@ -1,0 +1,60 @@
+﻿@page "/todo"
+
+<h3>@HeaderName</h3>
+<!-- Edit Form -->
+<EditForm Model="task" OnValidSubmit="AddTask" class="form-inline" >
+    <input type="text" @bind-value="task.TaskName" class="form-control mx-2" />
+    <button class="btn btn-outline-primary">Add Task</button>
+</EditForm>
+
+<div class="progress-bar my-2 mx-2" role="progressbar" style="width:@(PercentageComplete)%" aria-valuemax="100" aria-valuemin="0">
+    @(PercentageComplete)%
+</div>
+
+<ul class="list-group my-2">
+    @foreach (var taskitem in taskList)
+    {
+        if (taskitem.IsCompleted)
+        {
+            <!-- Completed Tasks -->
+            <li class="list-group-item list-group-item-success mx-1" @onclick="(() => taskitem.IsCompleted = !taskitem.IsCompleted)"><del>@taskitem.TaskName</del></li>
+        }
+        else
+        {
+        <!-- UnCompleted Tasks -->
+        <li class="list-group-item list-group-item-secondary mx-1" @onclick="(() => taskitem.IsCompleted = !taskitem.IsCompleted)">@taskitem.TaskName</li>
+        }
+    }
+</ul>
+
+
+@code {
+    protected List<TaskModel> taskList = new List<TaskModel>();
+
+    protected TaskModel task = new TaskModel();
+
+    protected override void OnInitialized()
+    {
+        if (HeaderName == "")
+            {
+            HeaderName = "ToDo";
+            }
+    }
+
+    [Parameter]
+    public string HeaderName { get; set; }
+
+    private void AddTask()
+    {
+        taskList.Add(task);
+        task = new TaskModel();
+    }
+
+    public int PercentageComplete
+    {
+        get
+        {
+            return taskList.Count > 0 ? (taskList.Count(x => x.IsCompleted) * 100/taskList.Count) : 0;
+        }
+    }
+}

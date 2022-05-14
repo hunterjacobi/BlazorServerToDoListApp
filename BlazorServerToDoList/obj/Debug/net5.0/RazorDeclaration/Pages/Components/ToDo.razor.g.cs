@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace BlazorServerToDoList.Shared
+namespace BlazorServerToDoList.Pages.Components
 {
     #line hidden
     using System;
@@ -89,7 +89,8 @@ using BlazorServerToDoList.Data.Models;
 #line default
 #line hidden
 #nullable disable
-    public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/todo")]
+    public partial class ToDo : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -97,15 +98,35 @@ using BlazorServerToDoList.Data.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 33 "/Users/guccigod/Documents/CodingProjects/Blazor/ToDoList/BlazorServerToDoList/BlazorServerToDoList/Shared/NavMenu.razor"
+#line 31 "/Users/guccigod/Documents/CodingProjects/Blazor/ToDoList/BlazorServerToDoList/BlazorServerToDoList/Pages/Components/ToDo.razor"
        
-    private bool collapseNavMenu = true;
+    protected List<TaskModel> taskList = new List<TaskModel>();
 
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+    protected TaskModel task = new TaskModel();
 
-    private void ToggleNavMenu()
+    protected override void OnInitialized()
     {
-        collapseNavMenu = !collapseNavMenu;
+        if (HeaderName == "")
+            {
+            HeaderName = "ToDo";
+            }
+    }
+
+    [Parameter]
+    public string HeaderName { get; set; }
+
+    private void AddTask()
+    {
+        taskList.Add(task);
+        task = new TaskModel();
+    }
+
+    public int PercentageComplete
+    {
+        get
+        {
+            return taskList.Count > 0 ? (taskList.Count(x => x.IsCompleted) * 100/taskList.Count) : 0;
+        }
     }
 
 #line default

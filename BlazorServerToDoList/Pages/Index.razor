@@ -1,7 +1,16 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
+<div class="row">
 
-Welcome to your new app.
+    <div class="col-6">
+        <BlazorServerToDoList.Pages.Components.ToDo HeaderName="Daily Tasks">
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+        </BlazorServerToDoList.Pages.Components.ToDo>
+    </div>
+
+    <div class="col-6">
+        <BlazorServerToDoList.Pages.Components.ToDo HeaderName="Monthly Tasks">
+
+        </BlazorServerToDoList.Pages.Components.ToDo>
+    </div>
+</div>

@@ -80,6 +80,13 @@ using BlazorServerToDoList.Shared;
 #line hidden
 #nullable disable
 #nullable restore
+#line 11 "/Users/guccigod/Documents/CodingProjects/Blazor/ToDoList/BlazorServerToDoList/BlazorServerToDoList/_Imports.razor"
+using BlazorServerToDoList.Data.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 3 "/Users/guccigod/Documents/CodingProjects/Blazor/ToDoList/BlazorServerToDoList/BlazorServerToDoList/Pages/FetchData.razor"
 using BlazorServerToDoList.Data;
 

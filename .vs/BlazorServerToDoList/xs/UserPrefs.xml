@@ -1,16 +1,24 @@
 ﻿<Properties StartupConfiguration="{44C35FB6-46FD-437D-8E5B-FE90A6730685}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BlazorServerToDoList/Shared/NavMenu.razor">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BlazorServerToDoList/Pages/Index.razor">
     <Files>
-      <File FileName="BlazorServerToDoList/Shared/NavMenu.razor" Line="2" Column="37" />
+      <File FileName="BlazorServerToDoList/Pages/Components/ToDo.razor" Line="39" Column="14" />
+      <File FileName="BlazorServerToDoList/Data/Models/TaskModel.cs" Line="1" Column="1" />
+      <File FileName="BlazorServerToDoList/Pages/Index.razor" Line="3" Column="13" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BlazorServerToDoList" expanded="True">
             <Node name="BlazorServerToDoList" expanded="True">
-              <Node name="Shared" expanded="True">
-                <Node name="NavMenu.razor" selected="True" />
+              <Node name="Data" expanded="True">
+                <Node name="Models" expanded="True" />
               </Node>
+              <Node name="Pages" expanded="True">
+                <Node name="Components" expanded="True" />
+                <Node name="Index.razor" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="Shared" expanded="True" />
             </Node>
           </Node>
         </State>
