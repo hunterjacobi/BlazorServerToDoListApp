@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{44C35FB6-46FD-437D-8E5B-FE90A6730685}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BlazorServerToDoList/Shared/NavMenu.razor">
+    <Files>
+      <File FileName="BlazorServerToDoList/Shared/NavMenu.razor" Line="2" Column="37" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BlazorServerToDoList" expanded="True">
+            <Node name="BlazorServerToDoList" expanded="True">
+              <Node name="Shared" expanded="True">
+                <Node name="NavMenu.razor" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.BlazorServerToDoList PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
